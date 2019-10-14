@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DyN-4x-AuV">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Choose_Your_Own_Adventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="23" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugH-dR-zJU">
+                                <rect key="frame" x="54" y="180" width="307" height="571"/>
+                                <string key="text">You hug your coat close to your body as you listen to the crunch of your boots digging into the snow. Snow covers the pines in a blanket of white, and you’re thankful for your fur-lidded hood as the wind scrapes and bites at your cheeks. The sun breaks just above the horizon. You follow the invisible map in your mind to the place  where you had seen smoke and ash from a fire earlier that night. The camp should’ve been here. Your grumbling stomach and thin coat are not easy to ignore as you pause and listen for signs of the camp. 
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3E-PP-gb7">
+                                <rect key="frame" x="168" y="692" width="78" height="30"/>
+                                <state key="normal" title="Go Straight"/>
+                                <connections>
+                                    <segue destination="Deo-tI-wGD" kind="show" id="aLW-H9-Ryi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xh-d4-i8K">
+                                <rect key="frame" x="177" y="759" width="60" height="30"/>
+                                <state key="normal" title="Go Right"/>
+                                <connections>
+                                    <segue destination="Deo-tI-wGD" kind="show" id="MYP-r7-lnq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0F2-gn-qeu">
+                                <rect key="frame" x="182" y="832" width="51" height="30"/>
+                                <state key="normal" title="Go Left"/>
+                                <connections>
+                                    <segue destination="Deo-tI-wGD" kind="show" id="og7-oC-miu"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Welcome! Click buttons and do stuff" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKW-b7-YCw">
+                                <rect key="frame" x="68" y="195" width="278" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="istockphoto-900772092-612x612" translatesAutoresizingMaskIntoConstraints="NO" id="lAd-1q-DVZ">
+                                <rect key="frame" x="37" y="98" width="340" height="89"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0F2-gn-qeu" firstAttribute="height" secondItem="f3E-PP-gb7" secondAttribute="height" id="1qX-al-T7M"/>
+                            <constraint firstItem="cKW-b7-YCw" firstAttribute="top" secondItem="lAd-1q-DVZ" secondAttribute="bottom" constant="8" id="1yu-hq-XNI"/>
+                            <constraint firstItem="lAd-1q-DVZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="2Db-JQ-Nxu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0F2-gn-qeu" secondAttribute="bottom" constant="25" id="6Wu-aG-Dt2"/>
+                            <constraint firstItem="0F2-gn-qeu" firstAttribute="top" secondItem="9xh-d4-i8K" secondAttribute="bottom" constant="25" id="8WR-Qx-z8r"/>
+                            <constraint firstItem="9xh-d4-i8K" firstAttribute="top" secondItem="ugH-dR-zJU" secondAttribute="bottom" constant="25" id="Boz-m6-bW2"/>
+                            <constraint firstItem="9xh-d4-i8K" firstAttribute="height" secondItem="f3E-PP-gb7" secondAttribute="height" id="FtG-FG-ttk"/>
+                            <constraint firstItem="lAd-1q-DVZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="Ftj-0n-DbK"/>
+                            <constraint firstItem="lAd-1q-DVZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="J5U-nA-WHN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lAd-1q-DVZ" secondAttribute="trailing" constant="37" id="KMN-Uj-8l3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0F2-gn-qeu" secondAttribute="trailing" constant="25" id="L0C-fl-cfR"/>
+                            <constraint firstItem="lAd-1q-DVZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="Nlb-5B-KLZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lAd-1q-DVZ" secondAttribute="trailing" constant="37" id="POl-UP-Ghh"/>
+                            <constraint firstItem="9xh-d4-i8K" firstAttribute="width" secondItem="f3E-PP-gb7" secondAttribute="width" id="SsA-MU-DOb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9xh-d4-i8K" secondAttribute="trailing" constant="25" id="U7k-o8-cRM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f3E-PP-gb7" secondAttribute="trailing" constant="25" id="Z6J-LZ-XgZ"/>
+                            <constraint firstItem="f3E-PP-gb7" firstAttribute="top" secondItem="cKW-b7-YCw" secondAttribute="bottom" constant="25" id="dIG-gt-7Cv"/>
+                            <constraint firstItem="cKW-b7-YCw" firstAttribute="top" secondItem="lAd-1q-DVZ" secondAttribute="bottom" constant="8" id="eKP-pM-2J7"/>
+                            <constraint firstItem="lAd-1q-DVZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="fFP-bH-ks5"/>
+                            <constraint firstItem="0F2-gn-qeu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="ghF-Om-7iQ"/>
+                            <constraint firstItem="f3E-PP-gb7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="jdb-pD-tdO"/>
+                            <constraint firstItem="0F2-gn-qeu" firstAttribute="width" secondItem="f3E-PP-gb7" secondAttribute="width" id="pku-vx-5L8"/>
+                            <constraint firstItem="9xh-d4-i8K" firstAttribute="top" secondItem="f3E-PP-gb7" secondAttribute="bottom" constant="25" id="r0K-7g-gSZ"/>
+                            <constraint firstItem="9xh-d4-i8K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="tIV-3P-1s9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lAd-1q-DVZ" secondAttribute="trailing" constant="37" id="zRJ-Tx-J1S"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0YF-co-Vg6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="109.82142857142857"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="79r-0m-xVi">
+            <objects>
+                <viewController id="Deo-tI-wGD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kGZ-dI-Aox">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="18" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uIv-0Z-c0E">
+                                <rect key="frame" x="20" y="-10" width="374" height="424"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">You continue on. Then you hear it: the clear noise of a horse’s whinny. You follow the noise and find yourself in front of five tents, sprawled in a circle. You enter the camp, carefully stepping through a maze of tripwires. You grab your sack and get to work, grabbing food, clothing, and silver pieces from the bandits’ bags. Before you leave, a strange glow from inside one of the tents catches your attention. 
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Do you investigate?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jkL-eW-UrZ">
+                                <rect key="frame" x="124" y="681" width="150" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Q8-ZB-6nv">
+                                <rect key="frame" x="184" y="724" width="30" height="30"/>
+                                <state key="normal" title="Yes"/>
+                                <connections>
+                                    <segue destination="9W3-2J-rlx" kind="show" id="uPq-YV-T4g"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kcf-w4-j6P">
+                                <rect key="frame" x="184" y="797" width="30" height="30"/>
+                                <state key="normal" title="No"/>
+                                <connections>
+                                    <segue destination="79n-sh-W3m" kind="show" id="AQJ-P5-3pP"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" misplaced="YES" image="eaeff9e43e199bf3a2d43cc00afa95d7" translatesAutoresizingMaskIntoConstraints="NO" id="wVw-g6-Jfw">
+                                <rect key="frame" x="84" y="288" width="247" height="366"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wVw-g6-Jfw" secondAttribute="height" multiplier="247:366" id="pEx-tM-zWv"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kcf-w4-j6P" firstAttribute="height" secondItem="wVw-g6-Jfw" secondAttribute="height" id="0oO-M9-oyc"/>
+                            <constraint firstItem="cg7-6i-Abw" firstAttribute="trailing" secondItem="kcf-w4-j6P" secondAttribute="trailing" constant="25" id="3h0-gN-Iz4"/>
+                            <constraint firstItem="kcf-w4-j6P" firstAttribute="leading" secondItem="cg7-6i-Abw" secondAttribute="leading" constant="20" id="Bdf-up-RGH"/>
+                            <constraint firstItem="4Q8-ZB-6nv" firstAttribute="leading" secondItem="cg7-6i-Abw" secondAttribute="leading" constant="20" id="Ckc-eT-YyD"/>
+                            <constraint firstItem="jkL-eW-UrZ" firstAttribute="leading" secondItem="cg7-6i-Abw" secondAttribute="leading" constant="25" id="Cwc-61-gKe"/>
+                            <constraint firstItem="wVw-g6-Jfw" firstAttribute="leading" secondItem="cg7-6i-Abw" secondAttribute="leading" constant="84" id="D5W-kc-iwn"/>
+                            <constraint firstItem="wVw-g6-Jfw" firstAttribute="leading" secondItem="cg7-6i-Abw" secondAttribute="leading" constant="84" id="G6W-Wi-UFP"/>
+                            <constraint firstItem="kcf-w4-j6P" firstAttribute="top" secondItem="4Q8-ZB-6nv" secondAttribute="bottom" constant="25" id="Jgw-F9-g1a"/>
+                            <constraint firstItem="cg7-6i-Abw" firstAttribute="trailing" secondItem="kcf-w4-j6P" secondAttribute="trailing" constant="20" id="JjB-o5-0fE"/>
+                            <constraint firstItem="wVw-g6-Jfw" firstAttribute="leading" secondItem="cg7-6i-Abw" secondAttribute="leading" constant="83.5" id="KEO-SN-Svn"/>
+                            <constraint firstItem="wVw-g6-Jfw" firstAttribute="top" secondItem="cg7-6i-Abw" secondAttribute="top" constant="200" id="Ksr-ef-Ig7"/>
+                            <constraint firstItem="jkL-eW-UrZ" firstAttribute="top" secondItem="wVw-g6-Jfw" secondAttribute="bottom" constant="83.5" id="MaJ-Ia-DtY"/>
+                            <constraint firstItem="jkL-eW-UrZ" firstAttribute="top" secondItem="wVw-g6-Jfw" secondAttribute="bottom" constant="25" id="NI0-4J-YuL"/>
+                            <constraint firstItem="cg7-6i-Abw" firstAttribute="trailing" secondItem="4Q8-ZB-6nv" secondAttribute="trailing" constant="20" id="NRE-o4-Mmv"/>
+                            <constraint firstItem="cg7-6i-Abw" firstAttribute="trailing" secondItem="wVw-g6-Jfw" secondAttribute="trailing" constant="83.5" id="R3O-6b-j5y"/>
+                            <constraint firstItem="cg7-6i-Abw" firstAttribute="trailing" secondItem="jkL-eW-UrZ" secondAttribute="trailing" constant="25" id="R3k-ws-7QH"/>
+                            <constraint firstItem="wVw-g6-Jfw" firstAttribute="top" secondItem="cg7-6i-Abw" secondAttribute="top" constant="25" id="UAN-yb-Eiu"/>
+                            <constraint firstItem="jkL-eW-UrZ" firstAttribute="height" secondItem="wVw-g6-Jfw" secondAttribute="height" id="VFO-kJ-1RE"/>
+                            <constraint firstItem="cg7-6i-Abw" firstAttribute="trailing" secondItem="4Q8-ZB-6nv" secondAttribute="trailing" constant="25" id="VZp-dv-eOr"/>
+                            <constraint firstItem="jkL-eW-UrZ" firstAttribute="width" secondItem="wVw-g6-Jfw" secondAttribute="width" id="YDm-aF-VD4"/>
+                            <constraint firstItem="4Q8-ZB-6nv" firstAttribute="leading" secondItem="cg7-6i-Abw" secondAttribute="leading" constant="25" id="YRP-Ne-w2i"/>
+                            <constraint firstItem="4Q8-ZB-6nv" firstAttribute="height" secondItem="wVw-g6-Jfw" secondAttribute="height" id="Ybl-Ga-wLG"/>
+                            <constraint firstItem="4Q8-ZB-6nv" firstAttribute="width" secondItem="wVw-g6-Jfw" secondAttribute="width" id="ZFO-pJ-DPR"/>
+                            <constraint firstItem="kcf-w4-j6P" firstAttribute="leading" secondItem="cg7-6i-Abw" secondAttribute="leading" constant="25" id="ZHY-cm-fwx"/>
+                            <constraint firstItem="kcf-w4-j6P" firstAttribute="height" secondItem="jkL-eW-UrZ" secondAttribute="height" id="b7J-ci-ETj"/>
+                            <constraint firstItem="4Q8-ZB-6nv" firstAttribute="height" secondItem="jkL-eW-UrZ" secondAttribute="height" id="dUE-5g-fxb"/>
+                            <constraint firstItem="cg7-6i-Abw" firstAttribute="bottom" secondItem="kcf-w4-j6P" secondAttribute="bottom" constant="20" id="dtX-Qr-Qlz"/>
+                            <constraint firstItem="wVw-g6-Jfw" firstAttribute="leading" secondItem="cg7-6i-Abw" secondAttribute="leading" constant="25" id="g1Y-HT-AhI"/>
+                            <constraint firstItem="4Q8-ZB-6nv" firstAttribute="top" secondItem="jkL-eW-UrZ" secondAttribute="bottom" constant="25" id="gfi-mB-buE"/>
+                            <constraint firstItem="cg7-6i-Abw" firstAttribute="trailing" secondItem="wVw-g6-Jfw" secondAttribute="trailing" constant="83" id="gpG-gP-YtZ"/>
+                            <constraint firstItem="kcf-w4-j6P" firstAttribute="top" secondItem="4Q8-ZB-6nv" secondAttribute="bottom" constant="20" id="itp-D1-dqS"/>
+                            <constraint firstItem="kcf-w4-j6P" firstAttribute="width" secondItem="wVw-g6-Jfw" secondAttribute="width" id="lMm-cA-Ldi"/>
+                            <constraint firstItem="jkL-eW-UrZ" firstAttribute="leading" secondItem="cg7-6i-Abw" secondAttribute="leading" constant="20" id="mtk-xu-j8v"/>
+                            <constraint firstItem="4Q8-ZB-6nv" firstAttribute="top" secondItem="jkL-eW-UrZ" secondAttribute="bottom" constant="20" id="nJy-dU-wCT"/>
+                            <constraint firstItem="cg7-6i-Abw" firstAttribute="trailing" secondItem="wVw-g6-Jfw" secondAttribute="trailing" constant="83" id="plM-Fq-ay9"/>
+                            <constraint firstItem="jkL-eW-UrZ" firstAttribute="top" secondItem="wVw-g6-Jfw" secondAttribute="bottom" constant="20" id="rJn-Jp-TC5"/>
+                            <constraint firstItem="kcf-w4-j6P" firstAttribute="width" secondItem="jkL-eW-UrZ" secondAttribute="width" id="sR5-5B-he8"/>
+                            <constraint firstItem="cg7-6i-Abw" firstAttribute="trailing" secondItem="jkL-eW-UrZ" secondAttribute="trailing" constant="20" id="syK-N4-2Nw"/>
+                            <constraint firstItem="wVw-g6-Jfw" firstAttribute="top" secondItem="cg7-6i-Abw" secondAttribute="top" constant="83.5" id="u9m-LL-pWw"/>
+                            <constraint firstItem="cg7-6i-Abw" firstAttribute="bottom" secondItem="kcf-w4-j6P" secondAttribute="bottom" constant="25" id="uiH-r6-c40"/>
+                            <constraint firstItem="jkL-eW-UrZ" firstAttribute="top" secondItem="wVw-g6-Jfw" secondAttribute="bottom" constant="27" id="vXo-9o-Fe9"/>
+                            <constraint firstItem="cg7-6i-Abw" firstAttribute="trailing" secondItem="wVw-g6-Jfw" secondAttribute="trailing" constant="25" id="wzW-9H-QI5"/>
+                            <constraint firstItem="4Q8-ZB-6nv" firstAttribute="width" secondItem="jkL-eW-UrZ" secondAttribute="width" id="xAd-8A-ehb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cg7-6i-Abw"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xrg-L2-5qN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1755.072463768116" y="118.52678571428571"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="MTI-Cv-mwT">
+            <objects>
+                <viewController id="79n-sh-W3m" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o65-1a-K5B">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Az-Qq-vV2">
+                                <rect key="frame" x="43" y="62" width="328" height="385"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">The sun has risen higher now. You’ve been here too long. You head to the outskirts of the camp, observing the time-consuming path you must take to get through the maze of tripwires. Suddenly, two men exit a tent, and go over to the chest where you had stolen a grey wool cloak. They look through the chest and begin to talk in aggravated voices, one man even drawing his knife.You need to leave. There is a group of horses just outside the camp. Getting through the tripwires will take time, but the two men won’t notice you. But, if they notice you while you’re halfway in the tripwires, it will be harder to escape.
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6xa-Jm-AIl">
+                                <rect key="frame" x="80" y="704" width="245" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Quickly put the bridle on your horse"/>
+                                <connections>
+                                    <segue destination="sBe-zM-Cb4" kind="show" id="80E-t3-5NC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Moh-kf-Hya">
+                                <rect key="frame" x="90" y="770" width="218" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Leave the horse and run on foot"/>
+                                <connections>
+                                    <segue destination="pcZ-cz-5hW" kind="show" id="5cw-8U-hFb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lip-L3-JeC">
+                                <rect key="frame" x="80" y="832" width="239" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Get on the horse without the bridle"/>
+                                <connections>
+                                    <segue destination="lSn-zz-ID5" kind="show" id="qPj-9q-93W"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Do You:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2di-2I-KQ1">
+                                <rect key="frame" x="169" y="660" width="60" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="p1321065368-3" translatesAutoresizingMaskIntoConstraints="NO" id="V1C-Ep-bvv">
+                                <rect key="frame" x="10" y="387" width="394" height="286"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="5ES-wb-uDU"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Knr-ly-zL4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2497.1014492753625" y="414.50892857142856"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jp1-5m-wAQ">
+            <objects>
+                <viewController id="KSz-y4-sqw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q9f-rI-G1P">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jog-S2-vwx">
+                                <rect key="frame" x="102" y="262" width="211" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">You are able to outrun the men in the open field. But soon, the men close in behind you, arm their bows, and shoot you down. You’re dead, dummy
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="gzE-eM-MD5"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TaZ-8G-XMD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1869.5652173913045" y="1298.4375"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="frg-Hu-gkL">
+            <objects>
+                <viewController id="lSn-zz-ID5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mrg-u0-6S3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="18" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePx-Rz-aKL">
+                                <rect key="frame" x="10" y="19" width="394" height="324"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">You kick the black horse into a gallop, and hurry forwards, continuing on without taking a look behind you. You didge precariously around trees, slowing to carefully jump over a fallen log. You come to a break in the trees, and you hear the angry yells of the men behind you. To your left is an open field and on your right, the forest continues.
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eAA-JE-Hs6">
+                                <rect key="frame" x="143" y="724" width="114" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Head to the field"/>
+                                <connections>
+                                    <segue destination="KSz-y4-sqw" kind="show" id="Odd-he-Q4K"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVu-mv-7r6">
+                                <rect key="frame" x="126" y="785" width="148" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Continue in the forest"/>
+                                <connections>
+                                    <segue destination="Ptg-hb-ygv" kind="show" id="USs-bf-10A"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Do You:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gu6-Xo-CS4">
+                                <rect key="frame" x="170" y="659" width="60" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="08_01_000036" translatesAutoresizingMaskIntoConstraints="NO" id="XVM-lc-OzW">
+                                <rect key="frame" x="-62" y="258" width="487" height="393"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="IoJ-Mv-2mU"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2SF-d9-XX1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2530.434782608696" y="1067.4107142857142"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1zE-iM-vJT">
+            <objects>
+                <viewController id="XlP-UQ-fU5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y5s-QT-APP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You move swiftly and evade the horses, but their dogs close in, making quick work of you, dummy" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTr-ft-PvA">
+                                <rect key="frame" x="74" y="209" width="230" height="173"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="meu-sm-2o8"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jDv-Hw-ALy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2549.275362318841" y="1775.8928571428571"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fUw-9i-Gxe">
+            <objects>
+                <viewController id="Ptg-hb-ygv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KV8-yR-Jz8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yyr-Gj-AI7">
+                                <rect key="frame" x="26" y="95" width="362" height="203"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">You ride quickly, hearing your blood rushing in your ears and the sounds of the enemy’s horses and bloodhounds. The forest thickens significantly and nearly all sunlight is blocked by the dense canopy. You see a hidden cave to your right and a thorny berry bush to the left. Your horse is having a hard time navigating through the trees, but if you leave your horse, the enemy may catch up to you.
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBX-XL-I4r">
+                                <rect key="frame" x="139" y="588" width="115" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Continue on foot"/>
+                                <connections>
+                                    <segue destination="XlP-UQ-fU5" kind="show" id="F4N-bu-F2W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nik-Kb-Q9I">
+                                <rect key="frame" x="119" y="719" width="159" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Continue on horseback"/>
+                                <connections>
+                                    <segue destination="I7Q-WS-1Xb" kind="show" id="9aZ-WC-RL0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QSU-gL-tsO">
+                                <rect key="frame" x="121" y="649" width="152" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Hide in the berry bush"/>
+                                <connections>
+                                    <segue destination="A0R-RR-UYY" kind="show" id="uKc-q2-56v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="llW-Yo-61t">
+                                <rect key="frame" x="142" y="795" width="110" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Hide in the cave"/>
+                                <connections>
+                                    <segue destination="jNp-cx-E3L" kind="show" id="9xb-x9-P8s"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Do You:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJU-t3-fms">
+                                <rect key="frame" x="166" y="542" width="60" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="5257743-heavy-snow-in-a-dense-forest" translatesAutoresizingMaskIntoConstraints="NO" id="Ina-FK-mVF">
+                                <rect key="frame" x="20" y="255" width="374" height="297"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="I9N-yG-3y4"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e0p-oi-Al0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3214.4927536231885" y="1425"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="EFF-rU-pTx">
+            <objects>
+                <viewController id="A0R-RR-UYY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wVK-vk-xnp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekw-7r-dcb">
+                                <rect key="frame" x="91" y="299" width="233" height="354"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">You hold your breath as the men on horseback pass. Soon, however, they return with your horse in tow. The dogs set their snouts to the ground, following your scent in circles. They cannot smell you in the berry bush! You have escaped for now, but there is more danger to come… 
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="vS9-4V-cBr"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fs7-ot-cwT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3934.7826086956525" y="1395.5357142857142"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="MjK-dl-7Yx">
+            <objects>
+                <viewController id="jNp-cx-E3L" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1oC-Hc-3CP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHn-3b-eHN">
+                                <rect key="frame" x="59" y="195" width="297" height="290"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">You hold your breath as the men on horseback pass. Soon, however, they return with your horse in tow. The dogs set their snouts to the ground, following your scent to hidden cave. You died, dummy</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="cpu-a8-gWz"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9sO-Ap-2mf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4021.739130434783" y="2082.5892857142858"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="esF-Mk-48F">
+            <objects>
+                <viewController id="I7Q-WS-1Xb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uYe-YP-I89">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The brush is too densely populated and your horse cannot move fast enough. You're dead, dummy" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Q6-bT-utA">
+                                <rect key="frame" x="91" y="206" width="232" height="308"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="vaW-Yf-HbB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D8U-Zj-n3c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3213.04347826087" y="2082.5892857142858"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5N3-0b-UlR">
+            <objects>
+                <viewController id="pcZ-cz-5hW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MF0-Ct-BYN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HZh-4D-kO5">
+                                <rect key="frame" x="20" y="201" width="381" height="213"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">You sprint ahead for a moment until men on horseback cut you down. You’re dead, dummy
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="KnQ-aq-sPG"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y7I-S4-e3z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3278.2608695652175" y="753.34821428571422"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7Jq-V5-I7e">
+            <objects>
+                <viewController id="sBe-zM-Cb4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7M8-BL-K9M">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Too slow. You died, dummy" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="21" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q6F-sC-znh">
+                                <rect key="frame" x="88" y="304" width="207" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Yuw-Nu-AjR"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PrR-xl-Kb9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3279.7101449275365" y="109.82142857142857"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vL6-aN-7YQ">
+            <objects>
+                <viewController id="9W3-2J-rlx" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B6f-Gh-2mW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="17" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Sz-vi-Ol5">
+                                <rect key="frame" x="49" y="127" width="316" height="390"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text"> A man sleeps by the floor but you tip toes inside and silently grab the glowing object. A heavy hand claps your shoulder, and you turn just in time to see the man’s dagger slice your leg. He reaches for a second knife, but you quickly hurl a wooden log at his head, incapacitating him.
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZN-LC-099">
+                                <rect key="frame" x="164" y="582" width="86" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Continue On"/>
+                                <connections>
+                                    <segue destination="79n-sh-W3m" kind="show" id="tuT-zp-5We"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="GnZ-5z-Azl"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3pQ-vh-3Z4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2482.608695652174" y="-329.46428571428572"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZDq-Px-yh1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DyN-4x-AuV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="o4J-dK-sJc">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="2Mv-Yy-AUi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WYM-5B-xTf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="08_01_000036" width="990" height="800"/>
+        <image name="5257743-heavy-snow-in-a-dense-forest" width="660" height="440"/>
+        <image name="eaeff9e43e199bf3a2d43cc00afa95d7" width="667" height="1000"/>
+        <image name="istockphoto-900772092-612x612" width="612" height="471"/>
+        <image name="p1321065368-3" width="580" height="386"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="AQJ-P5-3pP"/>
+        <segue reference="MYP-r7-lnq"/>
+    </inferredMetricsTieBreakers>
+</document>
