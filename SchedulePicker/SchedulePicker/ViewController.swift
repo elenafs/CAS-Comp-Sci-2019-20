@@ -65,6 +65,7 @@ UIPickerViewDelegate {
         // Do any additional setup after loading the view.
         
         var output = "It is a \(curWeekday), \(curDayType) day.\n\n"
+    }
         
         //    let reg_A_Sched = ["A", "B", "D", "E", "G", "H"]
         //    let reg_C_Sched = ["C", "A", "F", "D", "I", "G"]
@@ -98,52 +99,38 @@ UIPickerViewDelegate {
         //            }
         //        }
         
-    }
-  
     
-   // if (curDayType == "Monday") {
     
-    if (weekdays = [0]) {
-               "G":"Lifeskills",
-               "H":"Lifeskills",
-               "I":"Lifeskills"
-         
-           } else if (curDayType == "Tuesday") {
-               "G" = "Photography"
-                "H" = "Photography"
-                "I" = "Photograohy"
-           } else if (curDayType == "Friday"){
-               "G" = "Photography"
-               "H" = "Photography"
-               "I" = "Photograohy"
-           } else {
-               "G":"Free",
-               "H":"Free",
-               "I":"Free"
-           }
+    
+    // if (curDayType == "Monday") {
+    
+    
     
     @IBAction func getSchedule(_ sender: Any) {
         let dayTypeRow = pickerView.selectedRow(inComponent: 0)
         let ACBDay = dayTypes[dayTypeRow]
         
         let periodRotation:[String:[String]] = [
-            "A":["A", "B", "D", "E", "G", "H"],
-            "C":["C", "A", "F", "D", "I", "G"],
-            "B":["B", "C", "E", "F", "H", "I"]
+            "A":["A", "B", "D", "E"],
+            "C":["C", "A", "F", "D"],
+            "B":["B", "C", "E", "F"]
         ]
-        let mySched = getScheduleForDay(periods: periodRotation[ACBDay]!, mySchedule: mySchedule)
+        var mySched = getScheduleForDay(periods: periodRotation[ACBDay]!, mySchedule: mySchedule)
         
-        
-        
-        
-        
-//let weekDayRow = pickerView.selectedRow(inComponent: 1)
-//let weekDay = weekdays[weekDayRow]
-        
-        
-        
-        
-        
+        let dayweekRow = pickerView.selectedRow(inComponent: 1)
+        if (dayweekRow == 0) {
+            //Mon
+            mySched += "life skills"
+        } else if (dayweekRow == 1) {
+          mySched += "Photography"
+        } else if (dayweekRow == 2){
+            mySched += "Free"
+        } else if (dayweekRow == 4) {
+            mySched += "Photagraphy"
+      } else if (dayweekRow == 3) {
+            mySched += "Free"
+        }
+
         label.text = mySched
     }
     func getScheduleForDay(periods:[String], mySchedule:[String:String]) -> String {
