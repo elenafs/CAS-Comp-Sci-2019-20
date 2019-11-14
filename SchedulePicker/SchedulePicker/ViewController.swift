@@ -121,6 +121,7 @@ UIPickerViewDelegate {
         if (dayweekRow == 0) {
             //Mon
             mySched += "life skills"
+            
         } else if (dayweekRow == 1) {
           mySched += "Photography"
         } else if (dayweekRow == 2){
