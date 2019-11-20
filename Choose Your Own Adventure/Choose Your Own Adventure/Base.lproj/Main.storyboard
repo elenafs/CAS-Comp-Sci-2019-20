@@ -119,6 +119,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="18" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uIv-0Z-c0E">
                                 <rect key="frame" x="20" y="-10" width="374" height="424"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" secondItem="uIv-0Z-c0E" secondAttribute="height" multiplier="187:212" id="Vn9-4N-LP6"/>
                                     <constraint firstAttribute="height" constant="424" id="zab-u6-Gyi"/>
                                 </constraints>
                                 <string key="text">You continue on. Then you hear it: the clear noise of a horse’s whinny. You follow the noise and find yourself in front of five tents, sprawled in a circle. You enter the camp, carefully stepping through a maze of tripwires. You grab your sack and get to work, grabbing food, clothing, and silver pieces from the bandits’ bags. Before you leave, a strange glow from inside one of the tents catches your attention. 
@@ -130,6 +131,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you investigate?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jkL-eW-UrZ">
                                 <rect key="frame" x="124" y="679.5" width="150" height="21"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" secondItem="jkL-eW-UrZ" secondAttribute="height" multiplier="50:7" id="MBZ-u3-n8i"/>
                                     <constraint firstAttribute="height" constant="21" id="QDy-hb-Zgp"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -139,6 +141,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Q8-ZB-6nv">
                                 <rect key="frame" x="184" y="722.5" width="30" height="30"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" secondItem="4Q8-ZB-6nv" secondAttribute="height" multiplier="1:1" id="1dw-Gh-B0f"/>
                                     <constraint firstAttribute="height" constant="30" id="S1J-xl-EkU"/>
                                 </constraints>
                                 <state key="normal" title="Yes"/>
@@ -147,8 +150,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kcf-w4-j6P">
-                                <rect key="frame" x="184" y="795.5" width="30" height="30"/>
+                                <rect key="frame" x="184" y="795.5" width="29" height="30"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" secondItem="kcf-w4-j6P" secondAttribute="height" multiplier="30:31" id="VGW-6t-nGO"/>
                                     <constraint firstAttribute="height" constant="30" id="aCR-B2-A02"/>
                                 </constraints>
                                 <state key="normal" title="No"/>
@@ -156,10 +160,11 @@
                                     <segue destination="79n-sh-W3m" kind="show" id="AQJ-P5-3pP"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" misplaced="YES" image="eaeff9e43e199bf3a2d43cc00afa95d7" translatesAutoresizingMaskIntoConstraints="NO" id="wVw-g6-Jfw">
-                                <rect key="frame" x="84" y="288" width="247" height="366"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="eaeff9e43e199bf3a2d43cc00afa95d7" translatesAutoresizingMaskIntoConstraints="NO" id="wVw-g6-Jfw">
+                                <rect key="frame" x="84" y="288" width="246" height="364.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="wVw-g6-Jfw" secondAttribute="height" multiplier="247:366" id="Twe-Du-ZFH"/>
+                                    <constraint firstAttribute="width" secondItem="wVw-g6-Jfw" secondAttribute="height" multiplier="247:366" id="Xzf-Gb-DpU"/>
                                 </constraints>
                             </imageView>
                         </subviews>
