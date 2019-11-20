@@ -33,7 +33,13 @@
                             <outlet property="delegate" destination="McG-2N-C3R" id="gkq-Wk-jOG"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="4oz-02-StQ"/>
+                    <navigationItem key="navigationItem" id="4oz-02-StQ">
+                        <barButtonItem key="rightBarButtonItem" title="+" image="gift.fill" catalog="system" id="92b-Fg-6iS">
+                            <connections>
+                                <segue destination="Quy-tJ-xAI" kind="show" id="6Se-Le-UlH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yiy-qo-uWM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -42,23 +48,28 @@
         <!--View Controller-->
         <scene sceneID="lB1-vN-Bm5">
             <objects>
-                <viewController id="Quy-tJ-xAI" sceneMemberID="viewController">
+                <viewController id="Quy-tJ-xAI" customClass="ViewController" customModule="NotesProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gj1-2M-x93">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Obd-ux-2QS">
-                                <rect key="frame" x="63" y="255" width="288" height="327"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jB1-dk-UbX">
+                                <rect key="frame" x="20" y="103" width="374" height="759"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="qqH-jW-5zh"/>
                     </view>
                     <navigationItem key="navigationItem" id="7XB-iq-vnN"/>
+                    <connections>
+                        <outlet property="textView" destination="jB1-dk-UbX" id="Z9l-6K-AIR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3WV-FL-530" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -83,4 +94,10 @@
             <point key="canvasLocation" x="-436.23188405797106" y="178.79464285714286"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="gift.fill" catalog="system" width="64" height="64"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="6Se-Le-UlH"/>
+    </inferredMetricsTieBreakers>
 </document>

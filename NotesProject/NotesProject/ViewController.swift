@@ -9,12 +9,21 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    
+    var note:Note?
+    
+    @IBOutlet weak var textView: UITextView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        textView.text = note?.note
+        
     }
-
-
+    override func viewWillDisappear(_ animated: Bool) {
+        note?.note = textView.text
+    }
+    
 }
 
