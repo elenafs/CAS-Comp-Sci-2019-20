@@ -22,7 +22,7 @@ let name2 = xrds["name"] as? String
 //type:
 
 
-//1) types of name# : 0 -> an any (declared that when you began dictionary) (it's and any optional (Any?) because it doesn't know if it has a value) : 1 --> String (downcast as a String) : 2 --> String Optional
+//1) types of name# : 0 -> an any (declared that when you began dictionary) (it's an any optional (Any?) because it doesn't know if it has a value) : 1 --> String (downcast as a String) : 2 --> String Optional
 
 
 //2)change "name" --> [String]

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ull-c6-ruU">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="APIFinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!!! Select your birthday season to get a type of dinosaur" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ag-RA-oJ5">
+                                <rect key="frame" x="1" y="89" width="412" height="109.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2ag-RA-oJ5" secondAttribute="height" multiplier="331:121" id="IF3-SC-JxP"/>
+                                    <constraint firstAttribute="width" secondItem="2ag-RA-oJ5" secondAttribute="height" multiplier="331:121" id="Yz5-cf-4cS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="27"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LMx-tD-ASQ">
+                                <rect key="frame" x="1" y="420.5" width="412" height="109"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="LMx-tD-ASQ" secondAttribute="height" multiplier="61:32" id="ESS-sK-RlO"/>
+                                    <constraint firstAttribute="width" secondItem="LMx-tD-ASQ" secondAttribute="height" multiplier="61:32" id="db3-Yk-M9o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="21"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Summer">
+                                    <color key="titleColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="SummerPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6hl-4s-pIC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k1N-4E-9Dy">
+                                <rect key="frame" x="1" y="530.5" width="412" height="109.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="k1N-4E-9Dy" secondAttribute="height" multiplier="15:16" id="LmW-WS-a5G"/>
+                                    <constraint firstAttribute="width" secondItem="k1N-4E-9Dy" secondAttribute="height" multiplier="15:16" id="Mb8-Py-2Ml"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <state key="normal" title="Fall">
+                                    <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="PressFall:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Rx-Dm-COD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9vT-76-Jyc">
+                                <rect key="frame" x="1" y="310" width="412" height="109.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9vT-76-Jyc" secondAttribute="height" multiplier="3:2" id="bBH-RV-oZj"/>
+                                    <constraint firstAttribute="width" secondItem="9vT-76-Jyc" secondAttribute="height" multiplier="3:2" id="c0g-3i-RHj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                <state key="normal" title="Spring">
+                                    <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="SpringButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jHw-Qo-4jB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efx-z4-TmR">
+                                <rect key="frame" x="1" y="199.5" width="412" height="109.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="efx-z4-TmR" secondAttribute="height" multiplier="353:94" id="1Wa-Zp-WwK"/>
+                                    <constraint firstAttribute="width" secondItem="efx-z4-TmR" secondAttribute="height" multiplier="353:94" id="zdV-ys-c3e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIl-No-eoo">
+                                <rect key="frame" x="1" y="751.5" width="412" height="109.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zIl-No-eoo" secondAttribute="height" multiplier="53:33" id="cRf-rs-RA2"/>
+                                    <constraint firstAttribute="width" secondItem="zIl-No-eoo" secondAttribute="height" multiplier="53:33" id="uEj-SY-CmT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <state key="normal" title="CLEAR">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="ClearPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C7r-5L-VxC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blS-xR-n6F">
+                                <rect key="frame" x="1" y="641" width="412" height="109.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="blS-xR-n6F" secondAttribute="height" multiplier="3:2" id="60x-zo-XvQ"/>
+                                    <constraint firstAttribute="width" secondItem="blS-xR-n6F" secondAttribute="height" multiplier="3:2" id="ZTW-RL-8t2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="21"/>
+                                <state key="normal" title="Winter">
+                                    <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="PressWinter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iuK-fO-6FA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="efx-z4-TmR" secondAttribute="trailing" constant="1" id="1Qw-ED-qqL"/>
+                            <constraint firstItem="zIl-No-eoo" firstAttribute="width" secondItem="2ag-RA-oJ5" secondAttribute="width" id="3H4-eu-eKQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LMx-tD-ASQ" secondAttribute="trailing" constant="1" id="3lZ-7X-HTD"/>
+                            <constraint firstItem="blS-xR-n6F" firstAttribute="top" secondItem="k1N-4E-9Dy" secondAttribute="bottom" constant="1" id="5bu-6H-M2F"/>
+                            <constraint firstItem="zIl-No-eoo" firstAttribute="top" secondItem="blS-xR-n6F" secondAttribute="bottom" constant="1" id="6eo-8I-L5W"/>
+                            <constraint firstItem="blS-xR-n6F" firstAttribute="height" secondItem="2ag-RA-oJ5" secondAttribute="height" id="98h-Jm-mLF"/>
+                            <constraint firstItem="9vT-76-Jyc" firstAttribute="height" secondItem="2ag-RA-oJ5" secondAttribute="height" id="9Xk-sR-AeT"/>
+                            <constraint firstItem="blS-xR-n6F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="1" id="AIJ-KF-GYN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zIl-No-eoo" secondAttribute="trailing" constant="1" id="BTw-zf-oiD"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="zIl-No-eoo" secondAttribute="bottom" constant="1" id="Hff-FZ-b63"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9vT-76-Jyc" secondAttribute="trailing" constant="1" id="MIc-Kf-6YS"/>
+                            <constraint firstItem="2ag-RA-oJ5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="1" id="Omm-tH-Cdo"/>
+                            <constraint firstItem="9vT-76-Jyc" firstAttribute="top" secondItem="efx-z4-TmR" secondAttribute="bottom" constant="1" id="Q79-0V-KbR"/>
+                            <constraint firstItem="9vT-76-Jyc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="1" id="QEN-Jf-hqi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="blS-xR-n6F" secondAttribute="trailing" constant="1" id="RR6-aR-vd4"/>
+                            <constraint firstItem="9vT-76-Jyc" firstAttribute="width" secondItem="2ag-RA-oJ5" secondAttribute="width" id="RXk-8s-4mG"/>
+                            <constraint firstItem="LMx-tD-ASQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="1" id="Rr7-hx-vV3"/>
+                            <constraint firstItem="zIl-No-eoo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="1" id="SZ0-MV-9Zo"/>
+                            <constraint firstItem="k1N-4E-9Dy" firstAttribute="top" secondItem="LMx-tD-ASQ" secondAttribute="bottom" constant="1" id="Syn-ff-QR1"/>
+                            <constraint firstItem="efx-z4-TmR" firstAttribute="height" secondItem="2ag-RA-oJ5" secondAttribute="height" id="UKS-ID-Lp1"/>
+                            <constraint firstItem="efx-z4-TmR" firstAttribute="width" secondItem="2ag-RA-oJ5" secondAttribute="width" id="UpP-0p-wtf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2ag-RA-oJ5" secondAttribute="trailing" constant="1" id="VZM-YE-dAW"/>
+                            <constraint firstItem="LMx-tD-ASQ" firstAttribute="height" secondItem="2ag-RA-oJ5" secondAttribute="height" id="VaZ-C7-LeF"/>
+                            <constraint firstItem="k1N-4E-9Dy" firstAttribute="height" secondItem="2ag-RA-oJ5" secondAttribute="height" id="Wtt-gP-nie"/>
+                            <constraint firstItem="efx-z4-TmR" firstAttribute="top" secondItem="2ag-RA-oJ5" secondAttribute="bottom" constant="1" id="XmQ-3i-dpP"/>
+                            <constraint firstItem="LMx-tD-ASQ" firstAttribute="width" secondItem="2ag-RA-oJ5" secondAttribute="width" id="ZUK-rs-wII"/>
+                            <constraint firstItem="zIl-No-eoo" firstAttribute="height" secondItem="2ag-RA-oJ5" secondAttribute="height" id="aJF-Lg-I3e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="k1N-4E-9Dy" secondAttribute="trailing" constant="1" id="auA-gi-UtZ"/>
+                            <constraint firstItem="2ag-RA-oJ5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="1" id="bOl-lr-Ko9"/>
+                            <constraint firstItem="k1N-4E-9Dy" firstAttribute="width" secondItem="2ag-RA-oJ5" secondAttribute="width" id="eZT-AI-fhd"/>
+                            <constraint firstItem="blS-xR-n6F" firstAttribute="width" secondItem="2ag-RA-oJ5" secondAttribute="width" id="lmt-Pt-Jmy"/>
+                            <constraint firstItem="k1N-4E-9Dy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="1" id="ngv-1i-jmw"/>
+                            <constraint firstItem="efx-z4-TmR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="1" id="uxX-Pb-uju"/>
+                            <constraint firstItem="LMx-tD-ASQ" firstAttribute="top" secondItem="9vT-76-Jyc" secondAttribute="bottom" constant="1" id="yx1-x1-qvO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="SkH-PO-gCc"/>
+                    <connections>
+                        <outlet property="Label" destination="efx-z4-TmR" id="3GB-39-xcB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="973.91304347826099" y="109.82142857142857"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="RlU-2Q-dUr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ull-c6-ruU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="v6w-0O-nWg">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="h8L-ud-0wO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kpt-Ik-vsS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="63.768115942028992" y="109.82142857142857"/>
+        </scene>
+    </scenes>
+</document>
